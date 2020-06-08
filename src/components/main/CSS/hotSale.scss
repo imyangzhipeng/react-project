@@ -1,0 +1,77 @@
+.main-base{
+    width: 100vw;
+    .Hot-Sale{
+        width: 100vw;
+        background-color: rgb(169, 244, 245);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .hsale{
+            width: 100%;
+        }
+        .hst-con{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+            li{
+                font-size: 16px;
+                line-height: 50px;
+                color: rgb(0, 149, 146);
+                opacity: 0.8;
+            }
+            .active{
+                border-bottom: 2px solid rgb(0, 149, 146);
+            }
+        }
+
+        .hs-scope{
+            width: 98%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .hs-window{
+                width: 33%;
+                background-color: #fff;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                margin-top: 2px;
+                img{
+                    width: 100%;
+                }
+                .test-ellipsis{
+                    width: 90%;
+                    word-break: break-word;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #333;
+                }
+                .hs-price{
+                    width: 90%;
+                    font-weight: bold;
+                    color: #FF005A;
+                    font-size: 16px;
+                    line-height: 20px;
+                    .s-price{
+                        font-size: 12px;
+                        font-weight: normal;
+                        color: #666;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+    }
+
+    .necessary{
+        width: 100%;
+    }
+}

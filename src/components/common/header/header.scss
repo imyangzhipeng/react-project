@@ -1,0 +1,40 @@
+.head-main-contain{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    .head-search{
+        display: block;
+        height: 50px;
+        font: normal 30px/50px '微软雅黑';
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        .search-input{
+            display: flex;
+            align-items: center;
+            .box{
+                border-radius: 18px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .head-link{
+        height: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        font: 300 16px/50px '微软雅黑';
+        a{
+            color: #000;
+        }
+        a.active{
+            color: #ff6692;
+            border-bottom: 3px solid #ff6692;
+        }
+        
+    }
+}

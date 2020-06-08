@@ -1,0 +1,83 @@
+.seckill-main-con{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .countdown{
+        width: 96%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        .showRemain{
+            text-indent: 10px;
+            font-size: 14px;
+            font-weight: bolder;
+            color: #000;
+            .timeNum{
+                display: inline-block;
+                width: 20px;
+                height: 18px;
+                border-radius: 3px;
+                text-align: center;
+                text-indent: 0;
+                background-color: black;
+                color: #fff;
+                font-size: 12px;
+                line-height: 18px;
+                margin: 0 1px;
+            }
+        }
+
+        .more{
+            margin-left: auto;
+            font-size: 12px;
+            color: #000;
+        }
+    }
+
+    .show-goods{
+        width: 96%;
+        white-space: nowrap;
+        overflow: scroll;
+        margin-bottom: 10px;
+        .each-good{
+            display: inline-block;
+            width: 28%;
+            margin-right: 1%;
+            border: 1px solid #ededed;
+            border-radius: 3px;
+            img{
+                width: 100%;
+                border-bottom: 1px solid #ededed;
+            }
+            .title{
+                text-indent: 5%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 12px;
+                line-height: 20px;
+                height: 20px;
+                color: #1c1c1c;
+            }
+            .price{
+                height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 24px;
+                color: #fc487b;
+                .s-price{
+                    text-decoration: line-through;
+                    color: #919090;
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .show-goods::-webkit-scrollbar{
+        display: none;
+    }
+}
